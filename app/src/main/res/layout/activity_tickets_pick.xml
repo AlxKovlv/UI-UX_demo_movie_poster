@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color_background2"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:gravity="center"
+        android:text="@string/select_tickets"
+        android:textColor="@color/goldenYellow"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/horizontal_layout1"
+        android:background="@drawable/btn_background"
+        android:layout_weight="30"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/movie_image_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitStart"
+            android:src="@drawable/lion_king_space_main" />
+
+        <TextView
+            android:id="@+id/description_text_view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_weight="2"
+            android:autoSizeTextType="uniform"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:text="@string/title"
+            android:textColor="@color/goldenYellow"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_dropdown_layout"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="10">
+
+        <TextView
+            android:id="@+id/date_label_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/date"
+            android:textColor="@color/goldenYellow"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/date_spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <!-- Slider 1 -->
+    <LinearLayout
+        android:id="@+id/slider1_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="40dp"
+        android:layout_weight="10">
+
+        <TextView
+            android:id="@+id/slider1_label_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/adult_tickets"
+            android:textColor="@color/goldenYellow"
+            android:textSize="18sp" />
+
+        <!-- Slider 1 -->
+        <com.google.android.material.slider.Slider
+            android:id="@+id/adult_tickets_slider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:valueFrom="0"
+            android:valueTo="10"
+            android:stepSize="1"
+            android:value="0" />
+
+        <TextView
+            android:id="@+id/adult_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/_0"
+            android:textColor="@color/goldenYellow"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/slider2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="40dp"
+        android:layout_weight="10">
+
+        <TextView
+            android:id="@+id/slider2_label_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/child_tickets"
+            android:textColor="@color/goldenYellow"
+            android:textSize="18sp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/child_tickets_slider"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:stepSize="1"
+            android:value="0"
+            android:valueFrom="0"
+            android:valueTo="10" />
+
+        <TextView
+            android:id="@+id/child_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/_0"
+            android:textColor="@color/goldenYellow"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total_sum_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:text="@string/total_sum_0"
+        android:gravity="center"
+        android:textColor="@color/goldenYellow"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/buttons_layout"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_weight="10"
+        android:layout_marginTop="32dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/back_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/btn_background_reverse"
+            android:text="@string/back"
+            android:textColor="@color/goldenYellow" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/purchase_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/btn_background"
+            android:text="@string/ok"
+            android:textColor="@color/goldenYellow" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="darkPurple">#240C33</color>
+    <color name="lightPurple">#FF7044AA</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="vibrantGreen">#FF33FF66</color>
+    <color name="goldenYellow">#FCB931</color>
+    <color name="coral">#FFFF6F61</color>
+    <color name="berry">#4BBC1F88</color>
+    <color name="richOrange">#FFFF8C00</color>
+    <color name="rose">#FFB76E79</color>
+    <color name="midnightBlue">#7E191970</color>
+    <color name="softCyan">#2D6E88FF</color>
+    <color name="semiTransparentColor">#D9000000</color> <!-- Opacity 85% -->
+
+</resources>

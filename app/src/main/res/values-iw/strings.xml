@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">alexey_kovalev_auii_drill_i</string>
+    <string name="lion_king_description">טודו: תרגום מזעזע של גוגלטרנסלייט לעברית</string>
+    <string name="get_tickets">רכוש כרטיסים</string>
+    <string name="title">מלך האריות - בחלל</string>
+    <string name="back">חזור</string>
+    <string name="select_tickets">בחר כרטיסים</string>
+    <string name="date">תאריך</string>
+    <string name="child_tickets">ילד</string>
+    <string name="adult_tickets">מבוגר</string>
+    <string name="_0">0</string>
+    <string name="confirmation_title">אישור הזמנה</string>
+    <string name="confirmation_message">אנא אשר את פרטי ההזמנה:</string>
+    <string name="child_tickets_label">מספר כרטיסים - ילד:</string>
+    <string name="adult_tickets_label">מספר כרטיסים - מבוגר:</string>
+    <string name="total_sum_label">סכום:</string>
+    <string name="date_label">תאריך:</string>
+    <string name="total_sum_0">סכום: 0$</string>
+    <string name="ok">אישור</string>
+    <string name="total_sum_template">" $%1$d "</string>
+    <string name="ticket_order_sent">הזמנת כרטיסים נשלחה!</string>
+    <string name="forgot_pick_tickets">שכחת לבחור כרטיסים</string>
+    <string name="cancel">ביטול</string>
+    <string name="date_format">dd/MM/yy | HH:mm</string>
+</resources>
